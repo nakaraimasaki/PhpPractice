@@ -1,3 +1,4 @@
+
 <?php
     // 自分の得意な言語で
     // Let's チャレンジ！！
@@ -8,13 +9,28 @@
     $d_5 = fgets(STDIN);
     $d_6 = fgets(STDIN);
     $d_7 = fgets(STDIN);
-    $i=1;
     $cnt=0;
-    while($i<7){
-        if($d_i=='NO'){
+    if(strpos($d_1,'no') !== false){
             $cnt++;
         }
-        $i++;
-    }
-    echo ($cnt);
+    if(strpos($d_2,'no') !== false){
+            $cnt++;
+        }
+    if(strpos($d_3,'no') !== false){
+            $cnt++;
+        }
+    if(strpos($d_4,'no') !== false){
+            $cnt++;
+        }
+    if(strpos($d_5,'no') !== false){
+            $cnt++;
+        }
+    if(strpos($d_6,'no') !== false){
+            $cnt++;
+        }
+    if(strpos($d_7,'no') !== false){
+            $cnt++;
+        }
+    echo ($cnt)."\n";
+    echo "\n";
 ?>

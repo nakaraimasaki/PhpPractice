@@ -3,8 +3,10 @@
     // Let's チャレンジ！！
     $input_lines = fgets(STDIN);
     $x = explode(" ", $input_lines);
-    $n=$x[0];
-    $s=$x[1];
-    $k=$s-$n;
-    echo ($k);
+    $m=$x[0];
+    $n=$x[1];
+    for($cnt=0;$cnt<10;$cnt++){
+    $b=$m+($n*$cnt);
+    echo ($b)." ";
+    }
 ?>
