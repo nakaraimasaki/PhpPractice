@@ -5,6 +5,7 @@
     $x = explode(" ", $input_lines);
     $n=$x[0];
     $s=$x[1];
-    $k=$s-$n;
-    echo ($k);
+    $b=floor($n/$s);
+    $r=$n%$s;
+    echo ($b)." ".($r);
 ?>

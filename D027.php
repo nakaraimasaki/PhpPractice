@@ -1,10 +1,9 @@
 <?php
     // 自分の得意な言語で
     // Let's チャレンジ！！
-    $input_lines = fgets(STDIN);
-    while($input_lines>0){
-        $n=$input_lines++;
-        $input_lines--;
+    $n = fgets(STDIN);
+    for($cnt=1;$cnt!=$n+1;$cnt++){
+        $k=$cnt+$k;
     }
-    echo ($n);
+    echo ($k);
 ?>

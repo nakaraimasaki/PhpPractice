@@ -3,8 +3,8 @@
     // Let's チャレンジ！！
     $input_lines = fgets(STDIN);
     $x = explode(" ", $input_lines);
-    $n=$x[0];
-    $s=$x[1];
-    $k=$s-$n;
-    echo ($k);
+    $s=$x[0];
+    $n=$x[1];
+    $a=substr($s, $n-1, 1);
+    echo ($a);
 ?>
