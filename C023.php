@@ -10,7 +10,7 @@
     $e_0=$xa[4];
     $f_0=$xa[5];
     $N = fgets(STDIN);
-    for($i=0;$i<$N;$i++){
+    for($i=1;$i<$N+1;$i++){
         $n_[$i]=fgets(STDIN);
         $xb = explode(" ", $n_[$i]);
         $a_[$i]=$xb[0];
@@ -20,22 +20,22 @@
         $e_[$i]=$xb[4];
         $f_[$i]=$xb[5];
         $cnt=0;
-        if($a_0=$a_[$i]){
+        if($a_0===$a_[$i] OR $a_0===$b_[$i] OR $a_0===$c_[$i] OR $a_0===$d_[$i] OR $a_0===$e_[$i] OR $a_0===$f_[$i]){
             $cnt++;
         }
-         if($b_0=$b_[$i]){
+        if($b_0===$a_[$i] OR $b_0===$b_[$i] OR $b_0===$c_[$i] OR $b_0===$d_[$i] OR $b_0===$e_[$i] OR $b_0===$f_[$i]){
             $cnt++;
         }
-         if($c_0=$c_[$i]){
+        if($c_0===$a_[$i] OR $c_0===$b_[$i] OR $c_0===$c_[$i] OR $c_0===$d_[$i] OR $c_0===$e_[$i] OR $c_0===$f_[$i]){
             $cnt++;
         }
-         if($d_0=$d_[$i]){
+        if($d_0===$a_[$i] OR $d_0===$b_[$i] OR $d_0===$c_[$i] OR $d_0===$d_[$i] OR $d_0===$e_[$i] OR $d_0===$f_[$i]){
             $cnt++;
         }
-         if($e_0=$e_[$i]){
+        if($e_0===$a_[$i] OR $e_0===$b_[$i] OR $e_0===$c_[$i] OR $e_0===$d_[$i] OR $e_0===$e_[$i] OR $e_0===$f_[$i]){
             $cnt++;
         }
-         if($f_0=$f_[$i]){
+        if($f_0===$a_[$i] OR $f_0===$b_[$i] OR $f_0===$c_[$i] OR $f_0===$d_[$i] OR $f_0===$e_[$i] OR $f_0===$f_[$i]){
             $cnt++;
         }
         echo ($cnt);
